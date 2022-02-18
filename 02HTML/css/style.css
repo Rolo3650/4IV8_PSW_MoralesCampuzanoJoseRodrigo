@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #477397;
+    text-align: center;
+}
+html, body {
+    background-color: #DDFBD2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container{
+    border: 4px solid #759293;
+    border-radius: 25px;
+    margin: 2rem;
+    background-color: rgb(50, 50, 50);
+}
+nav, section, footer, article, aside{
+    border: 2px solid #739629;
+    margin: 1rem; 
+    border-radius: 10px;
+    padding: 1rem;
+}
+article, aside{
+    width: 40%;
+    display: inline-block;
+    height: 300px;
+    background-color: #927492;
+}
+nav, section, footer{
+    background-color: #829473;
+}
