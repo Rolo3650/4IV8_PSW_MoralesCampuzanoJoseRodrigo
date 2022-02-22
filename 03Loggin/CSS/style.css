@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.userlogin{
+    background-color: #ffffffaf;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 10%;
+    text-align-last: center;
+}
+
+.tittle{
+    text-align: center;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 30px;
+    color: aqua;
+}
+
+.userID{
+    padding-top: 20px;
+}
+
+.userID h4{
+    font-family: 'Franklin Gothic Medium';
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.userID input{
+    height: 15px;
+    width: 150px;
+    border: solid 2px green;
+    border-radius: 20px;
+}
+
+.pasword{
+    padding-top: 20px;
+}
+
+.pasword h4{
+    font-family: 'Franklin Gothic Medium';
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.pasword input{
+    height: 15px;
+    width: 200px;
+    border: solid 2px green;
+    border-radius: 20px;
+}
+
+.button{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.button p {
+    margin-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium';
+}
+
+a{
+    margin-top: 20px;
+    float: left;
+    margin-left: 60px;
+    color: salmon;
+}
+
+h5{
+    margin-top: 45px;
+    font: 15px;
+}
