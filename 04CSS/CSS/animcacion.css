@@ -1,0 +1,106 @@
+@keyframes animacion_test{
+
+    from{
+        background-color: aqua;
+    }
+
+    to {
+
+        background-color: rgb(166, 255, 0);
+
+    }
+
+}
+
+@keyframes girar{
+
+    from{
+
+        transform: rotate(0deg);
+
+    }
+
+    to{
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+@keyframes label-animacion{
+
+    from{
+        
+        transform: rotate(0deg);
+        margin-left: 0;
+
+    }
+
+    to{
+
+        transform: rotate(180deg);
+        margin-left: 85vw;
+
+    }
+
+
+}
+
+.label-container{
+
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.label{
+
+    width: 64px;
+    background-color: rgb(166, 255, 0);
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    animation: label-animacion 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.loader{
+
+    width: 64px;
+    height: 64px;
+    border: 16px solid magenta;
+    border-radius: 50%;
+    border-top: yellow solid 16px;
+    animation: girar .5s linear infinite;
+
+}
+
+.loader-double{
+
+    width: 64px;
+    height: 64px;
+    border: 16px solid teal;
+    border-radius: 50%;
+    border-top: yellow solid 16px;
+    border-bottom: 16px solid palegoldenrod;
+    animation: girar .5s linear infinite;
+
+}
+
+.animada{
+
+    width: 100%;
+    background-color: aqua;
+    color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    animation: animacion_test 10s alternate infinite;
+
+}
