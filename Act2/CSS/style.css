@@ -1,0 +1,95 @@
+*{
+   margin: 0%;
+}
+
+::-webkit-scrollbar{
+   display: none;
+}
+
+#cuerpo{
+   background-image: url("../Recursos/img1.png");
+   background-color: black;
+   background-size: cover;
+   height: 80vh;
+   width: 100%;
+}
+
+#cabecera{
+   height: 20vh;
+   width: 100%;
+   background-image: url("../Recursos/img2.png");
+   background-size: cover;
+   background-color: black;
+   text-align: center;
+}
+
+#img1{
+   height: 15vh;
+   margin-bottom: 2vh;
+   margin-left: 10vh;
+   margin-right: 10vh;
+   vertical-align: middle;
+   cursor: pointer;
+   
+}
+
+.boton{
+   height: 10vh;
+   width: 25vh;
+   margin-inline: 3vh;
+   border:        1px solid #ff9900;
+   border-radius: 0px;
+   color:         #ffffff;
+   font:          normal bold 26px/1 "Arvo", serif;
+   text-align:    center;
+   margin-top: 5vh;
+   animation-name: animacion;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   cursor: pointer;
+}
+
+@keyframes animacion{
+   from{
+   background-color: #05192c;
+   }
+   to{
+      background-color: #a16100;
+   }
+   
+}
+
+@keyframes label-animacion{
+
+   from{
+       
+       transform: rotate(0deg);
+       margin-left: 0;
+
+   }
+
+   to{
+
+       transform: rotate(180deg);
+       margin-left: 95vw;
+
+   }
+
+
+}
+
+#img3{
+   width: 10vh;
+   height: auto;
+   margin-top: 2vh;
+   animation-name: label-animacion;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+}
+
+#video{
+   text-align: center;
+}
