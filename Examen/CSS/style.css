@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+}
+
+.cabecera{
+    height: 6vmax;
+    width: 222vh;
+    background-color: #002973;
+    text-align: center;
+    padding-top: 7vh;
+    color: white;
+    font-family: Calibri;
+    font-size: 6vh;
+}
+
+.cuerpo{
+    height: 20vmax;
+    width: 222vh;
+    background-color: #d8d8d8;
+    padding-top: 10vh;
+}
+
+.pieDePagina{
+    height: 10vmax;
+    width: 222vh;
+    background-color: #2196f3;
+}
+
+.tabla{
+    border: #002973 solid 3px;
+    width: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto1{
+    height: 5vh;
+    border: #002973 solid 3px;
+    text-align: center;
+    padding-top: 2vh;
+    font: normal bold 3vh/1 "Open Sans", sans-serif;
+}
+.texto2{
+    height: 10vh;
+    border: #002973 solid 3px;
+    text-align: center;
+    padding-top: 6vh;
+    font: normal bold 3vh/1 "Open Sans", sans-serif;
+}
+
+.input{
+    width: 20vh;
+}
+
+#calcular{
+    height: 8vh;
+    width: 29vh;
+    margin-top: 3vh;
+    margin-left: 156vh;
+    background: url(../Recursos/b1.png);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#footer{
+    font: normal 3vh/1 "Open Sans", sans-serif;
+    margin-left: 3vh;
+    padding-top: 2vh;
+}
