@@ -14,7 +14,6 @@
 }
 
 .cuerpo{
-    height: 20vmax;
     width: 222vh;
     background-color: #d8d8d8;
     padding-top: 10vh;
@@ -61,6 +60,7 @@
     background-size: cover;
     border: none;
     cursor: pointer;
+    margin-bottom: 10vh;
     
 }
 
