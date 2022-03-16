@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(22, 181, 255);
+}
+
+.cabecera{
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    box-shadow: 1vh 1vh 5vh rgb(4, 104, 255);
+    text-align: center;
+    padding-top: 2vh;
+    border-bottom: 1vh solid rgb(199, 198, 198);
+    border-right: 1vh solid rgb(199, 198, 198);
+}
+
+.columna{
+    width: 25%;
+    margin-top: 8vh;
+    background-color: white;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    display: inline;
+    float: left;
+    border-top: 1vh solid rgb(199, 198, 198);
+    border-right: 1vh solid rgb(199, 198, 198);
+    border-bottom: 1vh solid rgb(199, 198, 198);
+    padding-left: 3vh;
+    padding-bottom: 5vh;
+}
+
+.seccion{
+    width: 60%;
+    margin-top: 8vh;
+    margin-left: 4%;
+    background-color: white;
+    border-radius: 3vh;
+    display: inline;
+    float: left;
+    border: 1vh solid rgb(199, 198, 198);
+    border-bottom: none;
+    padding-left: 3vh;
+    padding-right: 4%;
+    text-align: justify;
+    padding-bottom: 5vh;
+}
+
+.text{
+    font-family: 'Calibri', sans-serif;
+    color: rgb(92, 92, 92);
+    font-weight: bold; 
+}
+
+.hr{
+    height: .5vh;
+    background-color: rgb(92, 92, 92);
+    border-radius: 1vh;
+}
+
+#hr1{
+    width: 50vh;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.referencia{
+    text-decoration: none;
+    font-family: 'Calibri', sans-serif;
+    font-size: 3vh;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+    border-bottom: 1vh solid white;
+}
+
+@keyframes animacion1{
+    from{
+        font-size: 3vh;
+        color: rgb(92, 92, 92);
+        border-bottom: 1vh solid white;
+    } to{
+        font-size: 4vh;
+        color: black;
+        border-bottom: 1vh solid black;
+    }
+}
+
+.referencia:hover{
+    font-size: 4vh;
+    animation: animacion1 0.8s ;
+    color: black;
+    border-bottom: 1vh solid black;
+}
+
+#hr2{
+    width: 115vh;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.input{
+    height: 5%;
+    font-family: monospace;
+    width: 35vh;
+}
+
+.output{
+    font-family: monospace;
+    width: 34vh;
+    border: .3vh solid rgb(117, 117, 117);
+    border-radius: 3px;
+    padding: 1% 1vh;
+    color: rgb(92, 92, 92);
+    display: inline-block;
+}
+
+.boton{
+    background:    #666666;
+    border-radius: 11px;
+    padding:       2vh 3vh;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 17px/1 'Calibri', sans-serif;
+    text-align:    center;
+    border: none;
+}
+
+@keyframes animacion2 {
+    from{
+        background:    #666666;
+    }
+    to{
+        background:    #333333;
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+    animation: animacion2 .3s;
+    background:    #333333;
+}
