@@ -1,4 +1,46 @@
 
+//problema 1
+
+function problema1(){
+
+    var p1_input = document.getElementById("p1-input").value;
+
+    var p1_palabras1 = p1_input.split(" ");
+    var p1_palabras2 = [];
+    var resultado = "";
+
+    for(i = (p1_palabras1.length-1); i > -1; i--){
+
+        p1_palabras2.push(p1_palabras1[i]);
+
+    };
+
+    document.querySelector("#p1-output").textContent = p1_palabras2;
+
+}
+
+
+//problema 1
+
+function problema2(){
+
+    var p2_x1 = document.getElementById('p2-x1').value;
+    var p2_x2 = document.getElementById('p2-x2').value;
+    var p2_x3 = document.getElementById('p2-x3').value;
+    var p2_x4 = document.getElementById('p2-x4').value;
+    var p2_x5 = document.getElementById('p2-x5').value;
+    var p2_y1 = document.getElementById('p2-y1').value;
+    var p2_y2 = document.getElementById('p2-y2').value;
+    var p2_y3 = document.getElementById('p2-y3').value;
+    var p2_y4 = document.getElementById('p2-y4').value;
+    var p2_y5 = document.getElementById('p2-y5').value;
+
+    var resultado = (p2_x1 * p2_y1) + (p2_x2 * p2_y2) + (p2_x3 * p2_y3) + (p2_x4 * p2_y4) + (p2_x5 * p2_y5);
+
+
+    document.querySelector('#p2-output').textContent = resultado; 
+
+}
 
 //problema 3
 
