@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JavaScript/javascript.js"></script>
+        <link rel="stylesheet" href="CSS/styel.css">
+    </head>
+    <body>
+       <div id="contenedor1"> 
+        <div class="container" id="contenedor2">
+            <section class="seccion" id="seccion1">
+            <h1>Consulta de Alumnos de Batiz</h1>
+            <br>
+            <a href="ConsultarAlumnos">Consultar Lista</a>
+        </section>
+        </div>
+        <div class="container" >
+            <section class="seccion">
+            <br>
+            <form name="formulario" method="post" action="RegistrarAlumnos" >
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre"  >
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat" id="appat"  >
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat" id="apmat"  >
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="boleta" id="boleta"  >
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="telefono" id="telefono"  >
+                <br>
+                <input type="button" value="Registrar Nuevo Alumno" onclick="validarRegistro()" class="boton">
+                <br>
+                <input type="reset" value="Borrar Datos" class="boton">
+            </form>
+        </section>
+        </div>
+        <div class="container" >
+            <section class="seccion">
+            <form method="get" action="EliminarAlumno" name="elimina" >
+                <label>Ingrese la Boleta para dar de baja a un alumno</label>
+                <br>
+                <input type="text" name="boletaelimina" id="bol3">
+                <br>
+                <input type="button" value="Dar de Baja" onclick="validarEliminacion()" class="boton">
+            </form>
+        </section>
+        </div>
+        
+        <div class="container"  >
+            <section class="seccion">
+            <form name="formulario1" method="post" action="ActualizarAlumno" >
+                <label>Ingrese la Boleta del alumno y datos que se desean actualizar</label>
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="boleta2" id="boleta2"  >
+                <br>
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre2" id="nombre2"  >
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat2" id="appat2"  >
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat2" id="apmat2"  >
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="telefono2" id="telefono2"  >
+                <br>
+                <input type="button" value="Aztualizar Alumno" onclick="validarActualizacion()" class="boton">
+                <br>
+                <input type="reset" value="Borrar Datos" class="boton">
+            </form>
+        </section>
+        </div>
+        
+       </div>
+    </body>
+</html>
