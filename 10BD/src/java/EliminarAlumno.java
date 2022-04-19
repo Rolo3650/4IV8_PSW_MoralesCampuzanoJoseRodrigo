@@ -39,7 +39,7 @@ public class EliminarAlumno extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
                    //controlador:motorBD:puerto//IP/nombreBD
         String username = "root";
-        String password = "Roja161203.";
+        String password = "n0m3l0";
         
         try{
             //internat conectar a la bd
@@ -90,7 +90,7 @@ public class EliminarAlumno extends HttpServlet {
                 //delete from alumnobatiz where boleta=?
                 int boleta = Integer.parseInt(request.getParameter("boletaelimina"));
                 
-                String q = "delete from alumnosbatiz where boleta ="+boleta;
+                String q = "delete from alumnobatiz where boleta ="+boleta;
                 
                 set.executeUpdate(q);
                 out.println("<h1>Alumno Dado de Baja</h1>");

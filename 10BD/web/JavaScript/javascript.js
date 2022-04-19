@@ -6,7 +6,7 @@ function validarRegistro(){
     var apmat = document.getElementById("apmat").value;
     var tel = document.getElementById("telefono").value;
 
-    var v1 = /^[A-Za-z]+$/
+    var v1 = /^[A-Za-z]+[\s]*[A-Za-z]*[\s]*[A-Za-z]*$/
     var v2 = /^[0-9]+$/
     
     if (nom == "" && bol == "" && appat == "" && apmat == "" && tel == ""){
@@ -72,7 +72,7 @@ function validarActualizacion(){
     var apmat = document.getElementById("apmat2").value;
     var tel = document.getElementById("telefono2").value;
 
-    var v1 = /^[A-Za-z]*$/
+    var v1 = /^[A-Za-z]*[\s]*[A-Za-z]*[\s]*[A-Za-z]*$/
     var v2 = /^[0-9]*$/
     
     if (bol == "") {

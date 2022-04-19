@@ -1,0 +1,233 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+
+header{
+    
+    padding: 5px 20px;
+    background-color: #93003e;
+    color: white;
+    
+    display: grid;
+    
+    grid-gap: 20px;
+    grid-template-columns: auto 1fr auto;
+    
+}
+
+h1{
+    
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+.text{
+    
+    font: normal bold 26px/1 "Open Sans", sans-serif;
+    
+}
+
+#cuerpo{
+    
+    display: grid;
+    grid-template-columns: 35px 1fr 35px;
+    grid-template-rows: auto;
+    
+}
+
+.lateral{
+    
+    background-color: #006666;
+    
+}
+
+section{
+    
+    background-image: url(../Img/img3.jpg);
+    background-size: cover;
+    
+}
+
+#cuadro1{
+    
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-rows: 120px auto auto auto;
+    color: white;
+    
+}
+
+footer{
+    
+    background: #333333;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20px 1fr 20px;
+    padding-bottom: 10px;
+    
+}
+
+hr{
+    
+    height: 3px;
+    background-color: #cccccc;
+    border-radius: 3px;
+    margin: 20px 0 10px;
+    border: 0px;
+    
+}
+
+#pie{
+    
+    font-size: 12px;
+    margin-bottom: 50px;
+    color: #cccccc;
+    
+}
+
+#sesion{
+    
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    grid-template-rows: auto auto;
+    padding: 10px 60px;
+    font-size: 14px;
+    
+}
+
+#boton_aceptar, #registrar{
+    
+    display: block;
+    margin: 30px auto auto;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: white;
+    background: #93003e;
+    border: 0px;    
+    border-radius: 10px;
+    
+}
+
+#boton_aceptar:hover, #registrar:hover{
+    
+    color: #93003e;
+    background: white;
+    cursor: pointer;
+    
+}
+
+#boton_registrar_alumno, #boton_registrar_profesor{
+    
+    margin-left: 50px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    border-bottom: solid white 2px;
+    height: 20px;
+    width: 120px;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+#boton_registrar_alumno:hover, #boton_registrar_profesor:hover{
+    
+    color: #93003e;
+    border-bottom: #93003e solid 2px;
+}
+
+#formulario_ra,#formulario_foto{
+    
+    display: grid;
+    grid-gap: 5px;
+    margin: 5px 0px;
+    
+}
+
+#centro{
+    
+    padding: 20px 50px;
+    background: #b1abab;
+    font-size: 20px;
+    
+}
+
+.campos{
+    
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto 1fr;
+    margin: 10px;
+    
+}
+
+.input_text{
+    
+    width: 200px
+    
+}
+
+.input_fecha{
+    
+    width: 125px;
+    
+}
+
+.campos2{
+    
+    border: #93003e solid 3px;
+    border-radius:  15px;
+    padding: 10px 20px;
+    
+}
+
+.sub_registro{
+    
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #93003e;
+    
+}
+
+#registrar{
+    
+    display: inline-block;
+    
+}
+
+#mensaje{
+    
+    height: 500px;
+    width: auto;
+    background: #b1abab;
+    
+}
+
+a{
+    
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+#ins1{
+    
+    display: block;
+    
+}

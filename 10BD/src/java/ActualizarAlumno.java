@@ -30,7 +30,7 @@ public class ActualizarAlumno extends HttpServlet {
         String url = "jdbc:mysql:3306//localhost/alumnos";
                    //controlador:motorBD:puerto//IP/nombreBD
         String username = "root";
-        String password = "Roja161203.";
+        String password = "n0m3l0";
         
         try{
             //internat conectar a la bd
@@ -101,7 +101,7 @@ public class ActualizarAlumno extends HttpServlet {
                 //obtener los parametros para poder
                 //insertarlos en la BD
                 String nom, appat, apmat, tel;
-                int boleta;
+                int boleta, bol;
                 
                 nom = request.getParameter("nombre2");
                 appat = request.getParameter("appat2");
@@ -115,16 +115,23 @@ public class ActualizarAlumno extends HttpServlet {
                 System.out.println(tel);
                 System.out.println(boleta);
                 
-                String q = "";
+                String j = "select * from alumnobatiz where boleta =" + boleta;
+                
+                rs = set.executeQuery(j);
+                while(rs.next()){
+                    bol = rs.getInt("boleta");
+                    if (bol == boleta){
+                
+                        String q = "";
                 
                 if (nom != ""){
-                    q = "update alumnosbatiz set nombre = '" + nom + "' where boleta = " + boleta;
+                    q = "update alumnobatiz set nombre = '" + nom + "' where boleta = " + boleta;
                 } if (appat != ""){
-                    q = "update alumnosbatiz set appat = '" + appat + "' where boleta = " + boleta;
+                    q = "update alumnobatiz set appat = '" + appat + "' where boleta = " + boleta;
                 } if (apmat != ""){
-                    q = "update alumnosbatiz set apmat = '" + apmat + "' where boleta = " + boleta;
+                    q = "update alumnobatiz set apmat = '" + apmat + "' where boleta = " + boleta;
                 } if (tel != ""){
-                    q = "update alumnosbatiz set telefono = '" + tel + "' where boleta = " + boleta;
+                    q = "update alumnobatiz set telefono = '" + tel + "' where boleta = " + boleta;
                 }
                 
                 //se debe de preparar ejecutar la sentencia
@@ -132,6 +139,10 @@ public class ActualizarAlumno extends HttpServlet {
                 set.executeUpdate(q);
                 out.println("<h1>Alumno actualizado con éxtio</h1>");
                 System.out.println("Dato registrado");
+                
+                }
+                }
+                
             
             }catch(Exception e){
                 
@@ -144,7 +155,7 @@ public class ActualizarAlumno extends HttpServlet {
             
             
             
-            
+            out.println("<h1>Alumno no registrado</h1>");
             out.println("<a href='ConsultarAlumnos' >Consultar Alumnos</a>");
             out.println("</body>");
             out.println("</html>");
