@@ -39,8 +39,8 @@
                     
                     <%
                         
-                        String nombre, appat, apmat, fecha, sexo, semestre, grupo, usuario, contra;
-                        int boleta;
+                        String nombre, appat, apmat, fecha, sexo, grupo, usuario, contra;
+                        int boleta, semestre;
                         boolean existe= false;
                         
                         nombre = request.getParameter("nombre");
@@ -49,10 +49,13 @@
                         fecha = request.getParameter("fecha");
                         sexo = request.getParameter("sexo");
                         boleta = Integer.parseInt(request.getParameter("boleta"));
-                        semestre = request.getParameter("semestre");
+                        semestre = Integer.parseInt(request.getParameter("semestre"));
                         grupo = request.getParameter("grupo");
                         usuario = request.getParameter("usuario");
                         contra = request.getParameter("contra");
+                        
+                        int id_fecha=0, id_anio = 0 , id_mes = 0, id_dia = 0, id_grupo = 0,id_sexo=0, id_semestre=0,id_img=0;
+                        
                         
                         System.out.println("\n"+nombre+" "+appat+" "+apmat+" "+fecha+" "+sexo+" "+boleta+" "+semestre+" "+grupo+" "+usuario+" "+contra+"\n");
                         Connection con = null;
@@ -100,9 +103,9 @@
                                 }
                                 
                                 String [] fecha2 = fecha.split("-");
+                                int dia = Integer.parseInt(fecha2[2]);
+                                int mes = Integer.parseInt(fecha2[1]);
                                 int anio = Integer.parseInt(fecha2[0]);
-                                int mes = Integer.parseInt(fecha2[0]);
-                                int dia = Integer.parseInt(fecha2[0]);
                                 
                                 
                                 
@@ -114,6 +117,244 @@
                     
                     <%
                                     
+                                } else{
+
+                                    existe = false;
+                                    
+                                    q = "select * from cdia;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next() && existe == false){
+
+                                        if (re.getInt("dia") == dia){
+                                            
+                                            existe = true;
+
+
+                                        }
+
+                                    }
+
+                                    if (existe != true){
+
+                                        q = "insert into cdia(dia)value("+dia+");";
+                                        set.executeUpdate(q);
+
+                                    }
+
+                                    q = "select * from cdia;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next()){
+
+                                        if (re.getInt("dia") == dia){
+
+                                            id_dia = re.getInt("id_dia");
+
+                                        }
+
+                                    }
+
+                                    existe = false;
+                                    
+                                    q = "select * from cmes;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next() && existe == false){
+
+                                        if (re.getInt("mes") == mes){
+
+                                            
+                                            existe = true;
+
+
+                                        }
+
+                                    }
+
+                                    if (existe != true){
+
+                                        q = "insert into cmes(mes)value("+mes+");";
+                                        set.executeUpdate(q);
+
+                                    }
+
+                                    q = "select * from cmes;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next()){
+
+                                        if (re.getInt("mes") == mes){
+
+                                            id_mes = re.getInt("id_mes");
+
+                                        }
+
+                                    }
+                                    
+                                    existe = false;
+                                    
+                                    q = "select * from canio;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next() && existe == false){
+
+                                        if (re.getInt("anio") == anio){
+
+                                            
+                                            existe = true;
+
+
+                                        }
+
+                                    }
+
+                                    if (existe != true){
+
+                                        q = "insert into canio(anio)value("+anio+");";
+                                        set.executeUpdate(q);
+
+                                    }
+
+                                    q = "select * from canio;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next()){
+
+                                        if (re.getInt("anio") == anio){
+
+                                            id_anio= re.getInt("id_anio");
+
+                                        }
+
+                                    }
+
+                                    System.out.println("\n"+id_dia + " "+ id_mes +  " " + id_anio+"\n");
+                                    
+                                    existe = false;
+                                    
+                                    q = "select * from mfecha;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next() && existe == false){
+
+                                        if (re.getInt("id_anio") == id_anio && re.getInt("CMes_id_mes") == id_mes && re.getInt("CDia_id_dia") == id_dia ){
+
+                                            
+                                            existe = true;
+
+
+                                        }
+
+                                    }
+
+                                    if (existe != true){
+
+                                        q = "insert into mfecha(id_anio,CMes_id_mes,CDia_id_dia,Chora_id_hora)value("+id_anio+","+id_mes+","+id_dia+",1);";
+                                        set.executeUpdate(q);
+
+                                    }
+
+                                    q = "select * from mfecha;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next()){
+
+                                        if (re.getInt("id_anio") == id_anio && re.getInt("CMes_id_mes") == id_mes && re.getInt("CDia_id_dia") == id_dia ){
+
+                                            id_fecha= re.getInt("id_fecha");
+
+                                        }
+
+                                    }
+
+                                    System.out.println("\n"+id_fecha+"\n");
+
+                                    existe = false;
+                                    
+                                    q = "select * from cgrupo;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next() && existe == false){
+
+                                        if (re.getString("grupo").equals(grupo)){
+
+                                            
+                                            existe = true;
+
+
+                                        }
+
+                                    }
+
+                                    if (existe != true){
+                                        
+                                        
+                                        q = "insert into cgrupo(grupo)value('"+grupo+"');";
+                                        set.executeUpdate(q);
+
+                                    }
+
+                                    q = "select * from cgrupo;";
+                                    re = set.executeQuery(q);
+
+                                    
+                                    while(re.next()){
+
+                                        if (re.getString("grupo").equals(grupo)){
+
+                                            id_grupo= re.getInt("id_grupo");
+
+                                        }
+
+                                    }
+
+                                    System.out.println("\n"+id_grupo+"\n");
+
+                                    if (sexo.equals("femenino")){
+
+                                        id_sexo = 2;
+
+                                    } else{
+
+                                        id_sexo =1;
+
+                                    }
+
+                                    System.out.println("\n"+id_sexo+"\n");
+
+                                    if (semestre == 4){
+
+                                        id_semestre = 1;
+
+                                    }
+
+                                    System.out.println("\n"+id_semestre+"\n");
+
+                                    q = "select * from mimg;";
+                                    re = set.executeQuery(q);
+
+                                    while(re.next()){
+
+                                        id_img = re.getInt("id_img");
+
+                                    }
+                                    
+                                    id_img++;
+
+                                    String ruta = "ImgAlumno/img"+id_img+".png";
+
+                                    System.out.println(ruta);
+
                                 }
                                 
                                 
@@ -132,7 +373,7 @@
                         }
                         
                     %>
-                    <a href="RegistrarAlumno.jsp" id="ins1"><button id="boton_aceptar">Regresar</button></a>
+                    <a href="RegistrarAlumno.jsp" id="ins1"><button class="boton_aceptar">Regresar</button></a>
                 </div>
             <div class="lateral">
                     
@@ -148,7 +389,7 @@
             </div>
             <div class="text" id="pie">
                 
-                <hr>
+                <hr class="lp1">
                 <p>
                   
                     Sistema para el registro de equipos de computo desarrollado por:

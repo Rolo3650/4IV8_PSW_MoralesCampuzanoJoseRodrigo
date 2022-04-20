@@ -89,7 +89,7 @@
                 
                 </form>
                 <button onclick="registrar()" id="registrar">Registrar Alumno</button>
-                <a href="index.html"><button id="boton_aceptar">Regresar</button></a>
+                <a href="index.html"><button class="boton_aceptar">Regresar</button></a>
             </div>
             <div class="lateral">
                 
@@ -106,7 +106,7 @@
             </div>
             <div class="text" id="pie">
                 
-                <hr>
+                <hr class="l">
                 <p>
                   
                     Sistema para el registro de equipos de computo desarrollado por:

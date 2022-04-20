@@ -74,7 +74,7 @@ public class imagen extends HttpServlet {
             
             Part archvio = request.getPart("archivo");
             InputStream is = archvio.getInputStream();
-            File ac = new File("D:\\IPN\\Semestres\\Semestre_4\\PSW\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\105Examen\\Examen\\web\\Img_alumno\\img.png");
+            File ac = new File("D:\\IPN\\Semestres\\Semestre_4\\PSW\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\105Examen\\Examen\\web\\ImgAlumno\\img1.png");
             OutputStream outputStream = new FileOutputStream(ac);
             byte[] buffer = new byte[1024];
             int length;

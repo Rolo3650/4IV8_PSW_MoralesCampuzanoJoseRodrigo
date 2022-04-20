@@ -52,7 +52,7 @@ h1{
     
 }
 
-section{
+#index{
     
     background-image: url(../Img/img3.jpg);
     background-size: cover;
@@ -82,7 +82,7 @@ footer{
     
 }
 
-hr{
+.lp1{
     
     height: 3px;
     background-color: #cccccc;
@@ -111,7 +111,7 @@ hr{
     
 }
 
-#boton_aceptar, #registrar{
+.boton_aceptar, #registrar{
     
     display: block;
     margin: 30px auto auto;
@@ -124,7 +124,7 @@ hr{
     
 }
 
-#boton_aceptar:hover, #registrar:hover{
+.boton_aceptar:hover, #registrar:hover{
     
     color: #93003e;
     background: white;
@@ -223,11 +223,110 @@ a{
     
     display: inline-block;
     text-decoration: none;
+    border: none;
     
 }
 
 #ins1{
     
     display: block;
+    cursor: auto;
+    
+}
+
+#cuerpo2{
+    
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #c0c0c0;
+    
+}
+    
+.boton_menu{
+    
+    font: normal bold 26px/1 "Open Sans", sans-serif;
+    font-size: 20px;
+    padding-top: 37px;
+    text-align: center;
+    
+}
+
+.boton_menu:hover{
+    
+    color: #006666;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+#menu{
+    
+    display: grid;
+    color: white;
+    grid-template-rows: repeat(4,100px);
+    
+}
+
+#imagen{
+    
+    width: 150px;
+    height: 150px;
+    border:  #006666 solid 2px;
+    border-radius: 50%;
+    display: inline;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #999999;
+    
+}
+
+.encabezado{
+    
+    padding: 20px 20px;
+    background: #333333;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    
+}
+
+.usuario{
+    
+    border: blue 5px solid;
+    
+}
+
+#titulo{
+    
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    
+}
+
+.lp2{
+    
+    height: 3px;
+    background-color: #93003e;
+    border-radius: 3px;
+    margin: 15px  60px 20px 10px;
+    border: 0px;
+    
+}
+
+.parrafo1{
+    
+    margin: 7px 120px;
+    font-size: 20px
+    
+}
+
+#salir{
+    
+    display: grid;
+    
+    padding: 0px 80px 30px;
+    grid-template-columns: 1fr 100px;
     
 }
