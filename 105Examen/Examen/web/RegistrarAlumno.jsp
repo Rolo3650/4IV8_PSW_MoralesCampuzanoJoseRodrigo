@@ -74,7 +74,10 @@
                         </div>
                         </div>
 
-                        <div class="campos"><p>Ingresa el turno:</p><input type="text" name="turno"class="input_text"></div>
+                        <div class="campos"><p>Ingresa el turno:</p><div><input type="radio"name="turno">
+                            <label>Vespertino</label>
+                            <input type="radio"name="turno">
+                            <label>Matutino</label></div></div>
                         <div class="campos"><p>Ingresa el grupo (4IV8 ejemplo):</p><input type="grupo" name="grupo"class="input_text"></div>
                     </div>
                     <h3 class="sub_registro">INFORMACION DE LA CUENTA</h3>
@@ -106,7 +109,7 @@
             </div>
             <div class="text" id="pie">
                 
-                <hr class="l">
+                <hr class="lp1">
                 <p>
                   
                     Sistema para el registro de equipos de computo desarrollado por:

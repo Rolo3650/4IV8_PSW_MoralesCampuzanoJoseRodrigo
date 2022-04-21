@@ -54,7 +54,7 @@
                         usuario = request.getParameter("usuario");
                         contra = request.getParameter("contra");
                         
-                        int id_fecha=0, id_anio = 0 , id_mes = 0, id_dia = 0, id_grupo = 0,id_sexo=0, id_semestre=0,id_img=0;
+                        int id_fecha=0, id_anio = 0 , id_mes = 0, id_dia = 0, id_grupo = 0,id_sexo=0, id_semestre=0,id_img=0,idpersona = 0;
                         
                         
                         System.out.println("\n"+nombre+" "+appat+" "+apmat+" "+fecha+" "+sexo+" "+boleta+" "+semestre+" "+grupo+" "+usuario+" "+contra+"\n");
@@ -114,6 +114,7 @@
                                     %>
                     
                                     <h1 class="text">Boleta o Usuario ya registrados, intenta con otro.</h1>
+                                    <a href="RegistrarAlumno.jsp" id="ins1"><button class="boton_aceptar">Regresar</button></a>
                     
                     <%
                                     
@@ -234,8 +235,6 @@
                                         }
 
                                     }
-
-                                    System.out.println("\n"+id_dia + " "+ id_mes +  " " + id_anio+"\n");
                                     
                                     existe = false;
                                     
@@ -257,7 +256,7 @@
 
                                     if (existe != true){
 
-                                        q = "insert into mfecha(id_anio,CMes_id_mes,CDia_id_dia,Chora_id_hora)value("+id_anio+","+id_mes+","+id_dia+",1);";
+                                        q = "insert into mfecha(id_anio,CMes_id_mes,CDia_id_dia,Chora_id_hora)value("+id_anio+","+id_mes+","+id_dia+",'1');";
                                         set.executeUpdate(q);
 
                                     }
@@ -275,8 +274,6 @@
                                         }
 
                                     }
-
-                                    System.out.println("\n"+id_fecha+"\n");
 
                                     existe = false;
                                     
@@ -318,8 +315,6 @@
 
                                     }
 
-                                    System.out.println("\n"+id_grupo+"\n");
-
                                     if (sexo.equals("femenino")){
 
                                         id_sexo = 2;
@@ -330,15 +325,11 @@
 
                                     }
 
-                                    System.out.println("\n"+id_sexo+"\n");
-
                                     if (semestre == 4){
 
                                         id_semestre = 1;
 
                                     }
-
-                                    System.out.println("\n"+id_semestre+"\n");
 
                                     q = "select * from mimg;";
                                     re = set.executeQuery(q);
@@ -351,10 +342,32 @@
                                     
                                     id_img++;
 
-                                    String ruta = "ImgAlumno/img"+id_img+".png";
+                                    String ruta = "ImgAlumno/img"+id_img+".jpg";
 
-                                    System.out.println(ruta);
+                                    q = "insert into mimg(ruta)value('"+ruta+"');";
+                                    set.executeUpdate(q);
+  
+                                    q = "INSERT INTO `mydb`.`dpersona` (`nombre`, `appat`, `apmat`, `usuario`, `contraseña`, `id_img`, `id_fecha`, `id_grupo`, `id_sexo`, `id_semestre`, `id_rol`, `id_privilegio`) VALUES ('"+nombre+"', '"+appat+"', '"+apmat+"', '"+usuario+"', '"+contra+"', '"+id_img+"', '"+id_fecha+"', '"+id_grupo+"', '"+id_sexo+"', '"+id_semestre+"', '1', '1');";
+                                    set.executeUpdate(q);
+                                    
+                                    q = "select * from dpersona where usuario = '" + usuario + "';";
+                                    re = set.executeQuery(q);
 
+                                    while(re.next()){
+                                    
+                                    idpersona = re.getInt("id_persona");
+
+                                    }
+                                    q = "INSERT INTO mpersona (`boleta`, `id_person`) VALUES ('"+boleta+"', '"+idpersona+"');";
+                                    set.executeUpdate(q);
+                                    
+                                    %>
+                    
+                                    <h1 class="text">Registro exitoso</h1>
+                                    <a href="index.html" id="ins1"><button class="boton_aceptar">Regresar</button></a>
+                                    
+                                    <%
+                                    
                                 }
                                 
                                 
@@ -373,7 +386,7 @@
                         }
                         
                     %>
-                    <a href="RegistrarAlumno.jsp" id="ins1"><button class="boton_aceptar">Regresar</button></a>
+                    
                 </div>
             <div class="lateral">
                     

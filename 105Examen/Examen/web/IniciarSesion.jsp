@@ -277,7 +277,7 @@
                                                     <p class="parrafo1">Apellido Paterno: <%= appat %></p>
                                                     <p class="parrafo1">Apellido Materno: <%= apmat %></p>
                                                     <p class="parrafo1">Sexo: <%= sexo %></p>
-                                                    <p class="parrafo1">Fecha de nacimiento: <%= dia + "-" + mes + "-" + dia%></p>
+                                                    <p class="parrafo1">Fecha de nacimiento: <%= dia + "-" + mes + "-" + anio%></p>
                                                     
                                                     <br>
                                                     <h3 class="sub_registro">Informacion Academica</h3>
@@ -343,12 +343,13 @@
 
                     
                 </p>
-                
+
             </div>
             <div>
                 
             </div>
             
+    
         </footer>
         
     </div>
