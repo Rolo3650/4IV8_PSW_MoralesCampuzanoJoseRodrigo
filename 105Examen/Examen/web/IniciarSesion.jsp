@@ -1,8 +1,4 @@
-<%-- 
-    Document   : IniciarSesion
-    Created on : 18/04/2022, 06:13:12 PM
-    Author     : 52552
---%>
+
 
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.DriverManager"%>
@@ -238,9 +234,9 @@
                                     %>
 
                                     <div id="cuerpo2">
-                                        <aside class="lateral" id="menu">
+                                        <section class="lateral" id="menu">
              
-                                            <a class="boton_menu">
+                                            <a class="boton_menu" href="RegistrarEquipo.jsp?id=<%=boleta%>">
                                                 Registrar Equipo
                                             </a>
                                             <a class="boton_menu">
@@ -253,7 +249,7 @@
                                                 Actualizar Registro
                                             </a>
                                             
-                                        </aside>
+                                        </section>
                                         <section>
                                             
                                             <header class="encabezado">

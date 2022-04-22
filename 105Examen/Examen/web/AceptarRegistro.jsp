@@ -1,8 +1,4 @@
-<%-- 
-    Document   : AceptarRegistro
-    Created on : 18/04/2022, 02:48:43 AM
-    Author     : 52552
---%>
+
 
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.DriverManager"%>

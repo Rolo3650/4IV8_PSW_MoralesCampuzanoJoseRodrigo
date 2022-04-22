@@ -78,3 +78,9 @@ function registrar(){
     }
     
 }
+
+function iniciarSesion(){
+    
+    document.formulario_in.submit();
+    
+}

@@ -231,6 +231,7 @@ a{
     
     display: block;
     cursor: auto;
+    text-decoration: none;
     
 }
 
@@ -242,12 +243,14 @@ a{
     
 }
     
-.boton_menu{
+.boton_menu {
     
+    text-decoration: none;
     font: normal bold 26px/1 "Open Sans", sans-serif;
     font-size: 20px;
     padding-top: 37px;
     text-align: center;
+    color: white;
     
 }
 

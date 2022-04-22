@@ -1,8 +1,4 @@
-<%-- 
-    Document   : RegistrarAlumno
-    Created on : 17/04/2022, 09:27:10 PM
-    Author     : 52552
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
