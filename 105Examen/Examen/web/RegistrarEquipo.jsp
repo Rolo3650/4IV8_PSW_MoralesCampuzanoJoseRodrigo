@@ -10,6 +10,7 @@
     </head>
     <link rel="stylesheet" href="CSS/style1.css"/>
     <script src="JavaScript/js1.js"></script>
+    <script src="JavaScript/js2.js"></script>
     <body>
         <div>
         <header>
@@ -44,14 +45,14 @@
                         </form>
                         Inicio
                     </a>
-                        <a class="boton_menu">
+                        <a class="boton_menu" href="ConsultarEquipos.jsp?id=<%=boleta%>">
                         Consultar Equipos
                     </a>
-                    <a class="boton_menu">
+                    <a class="boton_menu" href="ReportarEquipo.jsp?id=<%=boleta%>">
                         Reportar Equipo
                     </a>
                     <a class="boton_menu">
-                        Actualizar Registro
+                        Actualizar Alumno
                     </a>
 
                 </section>
@@ -69,7 +70,7 @@
 
                         <section class="text" id="centro">
                             
-                            <form action="AceptarRegistroEquipo.jsp">
+                            <form action="AceptarRegistroEquipo.jsp" name="formulario_re">
                                 
                                 <h3 class="sub_registro">Registrar Equipo</h3>
                                 <hr class="lp2">
@@ -178,7 +179,7 @@
                                 <h3 class="sub_registro">Equipo</h3>
                                 <div class="campos2">
                                     
-                                    <div class="campos"><p>Ingresa la eriqueta del equipo:</p><input type="number" name="etiqueta" class="input_text"></div>
+                                    <div class="campos"><p>Ingresa la etiqueta del equipo:</p><input type="number" name="etiqueta" class="input_text"></div>
                                     <div class="campos"><p>Laoratorio:</p><div></div>
                                         <div>
                                         <input type="radio" name="lab" value="1">
@@ -220,10 +221,9 @@
 
                                 </div>
                                 <input type="hidden" name="id" value="<%=boleta%>">
-                                
-                                <button id="registrar">Registrar Equipo</button>
-                                
+
                             </form>
+                                <button onclick="registrarEquipo()" id="registrar">Registrar Equipo</button>
                             
                             <div id="salir">
                                 <div></div>

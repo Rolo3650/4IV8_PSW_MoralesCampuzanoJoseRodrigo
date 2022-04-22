@@ -239,14 +239,14 @@
                                             <a class="boton_menu" href="RegistrarEquipo.jsp?id=<%=boleta%>">
                                                 Registrar Equipo
                                             </a>
-                                            <a class="boton_menu">
+                                            <a class="boton_menu"href="ConsultarEquipos.jsp?id=<%=boleta%>">
                                                 Consultar Equipos
                                             </a>
-                                            <a class="boton_menu">
+                                                <a class="boton_menu" href="ReportarEquipo.jsp?id=<%=boleta%>">
                                                 Reportar Equipo
                                             </a>
                                             <a class="boton_menu">
-                                                Actualizar Registro
+                                                Actualizar Alumno
                                             </a>
                                             
                                         </section>

@@ -39,16 +39,18 @@ public class BaseDeDatos {
     public int BuscarEntero(String q, String nombre_entero){
         
         try {
-        
+            
+            int id = 0;
             set = con.createStatement();
             re = set.executeQuery(q);
             
             while (re.next()){
             
-                return re.getInt(nombre_entero);
+                id = re.getInt(nombre_entero);
             
             }
             
+            return id;
             
         
         } catch (SQLException e){
@@ -143,6 +145,12 @@ public class BaseDeDatos {
         return 0;
         
         
+    }
+    
+    public Connection Conexion(){
+    
+        return this.con;
+
     }
                         
 }
