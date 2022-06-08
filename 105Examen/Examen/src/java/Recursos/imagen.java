@@ -86,7 +86,7 @@ public class imagen extends HttpServlet {
             String username, url, password, driver;
             url = "jdbc:mysql://localhost/mydb";
             username = "root";
-            password = "Roja161203.";
+            password = "n0m3l0";
             driver = "com.mysql.jdbc.Driver";
             
             Class.forName(driver);
@@ -109,7 +109,7 @@ public class imagen extends HttpServlet {
                 
                 
             
-            String i = "D:\\IPN\\Semestres\\Semestre_4\\PSW\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\105Examen\\Examen\\web\\ImgAlumno\\img"+id_img+".jpg";
+            String i = "F:\\IPN\\Semestres\\Semestre_4\\PSW\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\4IV8_PSW_MoralesCampuzanoJoseRodrigo\\105Examen\\Examen\\web\\ImgAlumno\\img"+id_img+".jpg";
             
             Part archvio = request.getPart("archivo");
             InputStream is = archvio.getInputStream();

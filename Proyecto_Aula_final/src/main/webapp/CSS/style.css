@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Fredoka', sans-serif;
+    
+}
+
+/*Menu*/
+
+header{
+    height: 100px;
+    background: #cb9bde;
+    padding: 0 50px;
+    color:aliceblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu, .esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0,4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover, .mostrar-menu:hover , .esconder-menu:hover{
+    color: #4b0081;
+}
+
+#check{
+    display: none;
+}
+
+
+/*BANNER*/
+#banner{
+    padding:0 50px;
+    background-image: url(../WALLPAPERS/Wallpaper_Principal.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before{
+    content:'';
+    background: rgba(45, 30, 60, 0.6);
+    position:absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+}
+
+.contenido{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contenido h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido h3 span{
+    font-weight: 600;
+    
+}
+
+/*COMIENZA AHORA*/
+
+#Comienza{
+    padding:0 50px;
+    height: 50vh;
+
+    background: #9D7CB6;
+}
+
+#Sub1{
+    
+    position: relative;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+}
+
+#pose_lily{
+    position: absolute;
+    width: 297px;
+    height: 390px;
+    left: 154px;
+    top: 650px;
+}
+
+#Sub2{
+    position: absolute;
+    left: 500px;
+    top: 800px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+}
+
+/*Iconos*/
+
+#iconos{
+    padding: 0px 50px;
+    background:#cb9bde;
+}
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex:1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(145, 100, 191, 0.6);
+}
+.contenido-iconos div i{
+    color: #4b0081;
+}
+.contenido-iconos div h6{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+.contenido-iconos div p{
+    color:#4b0081;
+    font-size: 15px;
+}
+
+/*===================================================================SOBRE NOSOTROS=====================================================================*/
+
+/*Equipo*/
+
+.contenedor{
+    position: relative;
+    width: 98.6vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#equipo{
+    padding:50px 50px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+#equipo img{
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+    border-color: #4b0081;
+    
+}
+#equipo div{
+    padding: 30px 30px;
+}
+#equipo div h4{
+    color: #4b0081;
+    font-size:20px;
+    margin: 15px 0px;
+}
+#equipo div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+.saber-mas{
+    display:inline-block;
+    text-decoration:none;
+    color: #4b0081;
+    padding: 10px 30px;
+    border: 3px solid #4b0081;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.saber-mas:hover{
+    background:rgba(145, 100, 191, 0.6);
+    color: #4b0081;
+}
+
+/*Mision, Vision, Como nace*/
+
+#nosotros div{
+
+    display: block;
+    position: relative;
+    left: 700px;
+    margin: 50px;
+    width: 1231px;
+    height: 459px;
+    left: 129px;
+    background-color: rgba(196, 196, 196, 0.4);
+    border-radius: 50px;
+    padding: 30px;
+}
+
+#nosotros div h3{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #4B0081;
+}
+
+#nosotros div p{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+
+/*=========================================================INICIAR SESION==========================================================================*/
+/*Iniciar Sesion*/
+
+.ilustracion{
+
+    background-color: rgba(196, 196, 196, 0.5);;
+    width: 576px;
+    height: 759px;
+}
+
+.ilustracion img{
+    width: 546px;
+    height: 728px;
+}
+
+.formulario{
+    width: 512px;
+    height: 403px;
+    border: 1px solid #A09898;
+    box-sizing: border-box;
+    display: flexbox;
+    text-align: center;
+}
+
+.formulario h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+
+    color: #4B0081;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+
+.parametros{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iniciar_sesion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+
+}
+
+input{
+    background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
+    border-radius: 5px;
+    width: 408px;
+    height: 41px;
+}
+
+input:focus{
+    border: 3px solid #9966ac;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(134, 68, 201, 0.749);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"]{
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4B0081;
+
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
+    color: #4B0081;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #4B0081;
+}
+
+.enviar{
+
+    margin-left: 40px;
+    margin-top: 15px;
+    background: #CB9BDE;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    transition: all 0.4s;
+
+    color: #FFFFFF;
+}
+
+.enviar:hover{
+    background-color: #4b0081;
+    
+}
+
+.registrar{
+    border: 1px solid #A09898;
+    box-sizing: border-box;
+    width: 512px;
+    height: 154px;
+    align-items: center;
+}
+
+.registrar h2{
+    text-align: center;
+    font-style:inherit;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 30px;
+
+    color: #000000;
+}
+
+.registrar a{
+
+    margin-top: 20px;
+    margin-left: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: #CB9BDE;
+    transition: all 2s;
+    
+}
+
+.registrar a:hover{
+
+    margin-top: 20px;
+    margin-left: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: #4b0081;
+    
+}
+
+/*=====================================================================JUGAR==========================================================================*/
+
+#Menu-Seleccion{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+
+    justify-content: center;
+}
+
+.contenedor-menu{
+
+    height: 836px;
+    width: 90%;
+    max-width: 629px;
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.titulo-menu{
+    align-items: center;
+    text-align: center;
+}
+
+#titulo-mo{
+    height: 163px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: center;
+    color: #4B0081;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boton-jugar{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-jugar:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-jugar a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-jugar h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+}
+
+
+.boton-seleccionar-nivel{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+    display: flex;
+
+    align-items: center;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-seleccionar-nivel:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+    display: flex;
+
+    align-items: center;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-seleccionar-nivel a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-seleccionar-nivel h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #FFFFFF;
+}
+
+.boton-salir{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-salir:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-salir a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-salir h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+}
+
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+.sonido{
+    width: 120px;
+    height: 93px;
+}
+
+
+/*=================================================================SELECCIONAR NIVEL==================================================================*/
+
+#Seleccionar-Nivel-P{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: block;
+
+    justify-content: center;
+}
+
+.fondo-nivel{
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 1164px;
+    height: 678px;
+
+    background: #CB9BDE;
+    opacity: 0.6;
+    border-radius: 60px;
+}
+
+.fondo-nivel img{
+    width: 1024px;
+    height: 682px;
+    margin-left: 3%;
+}
+/*=====================================================================REGISTRO===========================================================================*/
+
+
+.registro_back{
+    background:url(../WALLPAPERS/Wallpaper_Principal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    width: 100vw;
+    height: 100vh;
+}
+
+.registrarse h1{
+    
+    text-align: center;
+    width: 435px;
+    height: 163px;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+
+    color: #4B0081;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contenido-registro{
+    width: 100%;
+    padding: 15px;
+}
+.registrarse{
+    margin: auto;
+    width: 600px;
+    margin-top: 150px;
+    border-radius: 2%;
+    background: #C4C4C4;
+    border-radius: 48px;
+    text-align: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #4b0081;
+    color:#cb9bde;
+    text-align:center;
+    padding: 10px 0px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #cb9bde;
+}
+
+/*Scroll*/
+
+body::-webkit-scrollbar{
+    width:10px;
+    background: #cb9bde;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #4b0081;
+    border-radius: 10px;
+}
+
+
+/*=========================================================================RESPONSIVE==================================================================*/
+
+@media(max-width: 768px){
+    /*Menu*/
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #cb9bde;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display:block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position:absolute;
+        top:40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /*Equipo*/
+
+    #personas{
+        flex-direction: column;
+    }
+
+    /*Registro*/
+
+    .registrarse,
+    .Registro{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+    /*Footer*/
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+a #salir:hover{
+    
+    cursor: pointer;
+    
+}

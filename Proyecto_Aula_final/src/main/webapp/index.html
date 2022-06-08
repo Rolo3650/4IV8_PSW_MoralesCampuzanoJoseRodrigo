@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMG/LOGO.png">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="https://kit.fontawesome.com/8042365e74.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>MOLLY</title>
+</head>
+<body>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+    <div class="centrado"></div>
+    <header>
+        <h2 class="logo">MOLLY</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="sobre_nosotros.jsp">Sobre nosotros</a>
+            <a href="jugar.jsp">jugar</a>
+            <a href="registrar_Sesion.jsp">Perfil</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section>
+        <img src="IMG/INDEX/stars.png" alt="estrellas" id="estrellas">
+        <h2 id="MOLLY">MOLLY</h2>
+        <img src="IMG/INDEX/moon.png" alt="luna" id="luna">
+        <img src="IMG/INDEX/mountains3.webp" alt="montaña" id="mountains3">
+        <img src="IMG/INDEX/mountains4.webp" alt="montaña" id="mountains4">
+        <img src="IMG/INDEX/river5.webp" alt="montaña" id="river">
+        <img src="IMG/INDEX/boat6.webp" alt="montaña" id="boat6">
+        <img src="IMG/INDEX/mountains7.webp" alt="montaña" id="mountains7">
+    </section>
+    <div class="QueEs">
+        <h2>¿Qué es MOLLY?</h2>
+        <h3>Mejora tu empatía AHORA</h3>
+        <p>
+            <br><br>
+            MOLLY es un programa enfocado en identificar el perfil empatico del usuario y así auxiliar a este mismo indicandole como le es posible mejorar este perfil por medio
+            de cuestionarios divididos en escalas y pasando por un filtro que es la Psicologa
+            <br><br>
+        <h3>¿Por que somos?</h3>
+            <br><br>
+            Gracias a un estudio de mercado pudimos observar la poca empatía y el individualismo de los adolescentes que hoy en dia manejan. Es por ello
+            que BUBBLE se ha enfocado en la creación de este proyecto para mejorar el compañerismo y la convivencia entre jovenes adolescentes.
+            <br><br>
+            Se sabe que en esta etapa es dificil representar y/o encontrar una forma por la cual un joven encuentre este valor, es por esto que nos enfocamos en hacerlo de una menera creativa
+            y sencilla para los usuarios
+            <br><br>
+        <h3>Sinópsis</h3>
+            <br><br>
+            Molly sufre de problemas que sufrimos todos, día y a día con falta de empatía ella trata de superar estos problemas sin embargo ella contará con una compaññía la cual seras
+            TU, una persona la cual podrá interferir, acompañar y apoyar en las decisiones de MOLLY a lo largo de todas sus problematicas.
+        <img src="IMG/MOLLY/IMG-20220523-WA0036.jpg" alt="MOLLY">
+    </div>
+    <script src="JS/parallax_scroll.js"></script>
+</body>
+</html>

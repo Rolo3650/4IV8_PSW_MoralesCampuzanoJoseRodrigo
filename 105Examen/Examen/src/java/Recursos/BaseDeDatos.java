@@ -19,7 +19,7 @@ public class BaseDeDatos {
     
         this.url = "jdbc:mysql://localhost/mydb";
         this.username = "root";
-        this.password = "Roja161203.";
+        this.password = "n0m3l0";
         this.driver = "com.mysql.jdbc.Driver";
 
         try {

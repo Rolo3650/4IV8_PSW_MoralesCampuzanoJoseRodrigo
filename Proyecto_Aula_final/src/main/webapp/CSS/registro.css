@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Fredoka', sans-serif;
+    
+}
+
+body {
+    
+    margin: 0;
+    background:url(../WALLPAPERS/Wallpaper_Principal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h3{
+    text-align: center;
+    color: #4B0081;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+    color: #4B0081;
+    font-size: 40px;
+}
+
+label{
+    text-align: center;
+    color: #4B0081;
+    font-size: 20px;
+}
+
+.registrarse h1{
+    
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+
+    color: #4B0081;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contenido-registro{
+    padding: 15px;
+}
+.registrarse{
+    
+    margin-top: 25px;
+    border-radius: 2%;
+    background: #C4C4C4;
+}
+
+input{
+    background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 3px solid #9966ac;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(134, 68, 201, 0.749);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"]{
+    
+    font-size: 30px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
+    color: #4B0081;
+}
+
+.registrarse input[type="radio"]{
+    display: none;
+}
+
+.registrarse label{
+    color: #4b0081;
+    padding: 5px 15px 5px 51px;
+    display:inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.registrarse label:hover{
+    background-color: #9f6bc79f;
+}
+
+.registrarse label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #4b0081;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+.registrarse input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background-color: #4b0081;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.registrarse input[type="radio"]:checked + label:before{
+    display: none;
+}
+
+
+.input-contenedor{
+    margin-bottom: 15px;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #4B0081;
+}
+
+.enviar{
+
+    margin-left: 40px;
+    margin-top: 15px;
+    background: #CB9BDE;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    transition: all 0.4s;
+
+    color: #FFFFFF;
+}
+
+.enviar:hover{
+    background-color: #4b0081;
+    
+}
+
+@media(min-width:768px){
+.registrarse{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+.saber-mas{
+    display:inline-block;
+    text-decoration:none;
+    color: #4b0081;
+    padding: 10px 30px;
+    border: 3px solid #4b0081;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    width: 100%;
+    cursor: pointer;
+}
+.saber-mas:hover{
+    background:rgba(189, 100, 191, 0.6);
+    color: #f2f2f2;
+}

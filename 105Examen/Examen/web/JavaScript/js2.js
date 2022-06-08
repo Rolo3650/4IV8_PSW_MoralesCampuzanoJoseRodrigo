@@ -18,7 +18,7 @@ function registrarEquipo(){
     
     if (!(cadena5.test(cod_cpu)) || !(cadena5.test(cod_mon))){
         
-        alert("Ingresa todos los codigos seriales");
+        alert("Ingresa todos los codigos seriales sin espacios");
         
     } if(desc_cpu == "" || marca_cpu == "" || desc_mon == "" || marca_mon == "" || desc_acss == "" || marca_acss == "" || desc_config == "" || marca_config == "" || etiqueta == "" || lab == "" || asignatura == ""){
         

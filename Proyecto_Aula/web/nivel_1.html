@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMG/LOGO.png">
+    <link rel="stylesheet" href="CSS/dialogoMOLLY.css">
+    <title>Nivel 1</title>
+</head>
+
+<body>
+    <canvas>
+    </canvas>
+
+    <div class="dialogoM" id="dialogoM">
+        <div class="Perfil">
+            <img src="IMG/MOLLY/Perfil.png" alt="">
+        </div>
+        <div class="Contenido">
+            <h2 class="Nombre">MOLLY</h2>
+            <p class="nombreSecundario">Tristeza</p>
+            <p class="dialogo_contenido" id="dialogos">No sé qué estoy haciendo mal, estoy tan angustiada y no quiero perder a Jackie</p>
+        
+            <div class="botones">
+                <button class="saber-mas" id="Cerrar">Cerrar</button>
+                <button class="saber-mas" id="SiguienteL">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialogoM" id="dialogoL">
+        <div class="Perfil">
+            <img src="IMG/LILY/Perfil.png" alt="">
+        </div>
+        <div class="Contenido">
+            <h2 class="Nombre">MOLLY</h2>
+            <p class="nombreSecundario">Tutorial</p>
+            <p class="dialogo_contenido" id="dialogos">Hola... este es tu primer dialogo en MOLLY, a lo largo del juego se te presentaran diversas situaciones donde se evaluará tu empatía... sigue JUGANDO</p>
+        
+            <div class="botones">
+                <button class="saber-mas" id="Cerrar">Cerrar</button>
+                <button class="saber-mas" id="SiguienteF">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialogoM" id="dialogoJ">
+        <div class="Perfil">
+            <img src="IMG/MOLLY/Perfil.png" alt="">
+        </div>
+        <div class="Contenido">
+            <h2 class="Nombre"><span>Tu Nombre</span></h2>
+            <p class="nombreSecundario">Pensamiento</p>
+            <p class="dialogo_contenido" id="dialogos">Jackie la pareja de Molly solía estar con otras chicas, la engañaba y aun así él metía para mantener su relación a salvo, sin embargo, ella ya sospechaba. Molly solía afectarse frecuentemente de celos, aunque no quería ver la realidad, se culpaba de que su relación no fuese bien.</p>
+        
+            <div class="botones">
+                <button class="saber-mas" id="Cerrar">Cerrar</button>
+                <button class="saber-mas" id="Siguiente">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <form action="" id="formulario" class="dialogoM">
+        <div class="dialogoM" id="1P">
+            <div class="Perfil">
+                <img src="IMG/MOLLY/Perfil.png" alt="">
+            </div>
+            <div class="Contenido">
+                <h2 class="Nombre">MOLLY</h2>
+                <p class="nombreSecundario">Tutorial</p>
+                <p class="dialogo_contenido" id="dialogos">Me gustaría que te imaginaras cómo me siento ahora mismo</p>
+            
+                <div class="wrap">
+                    <div>
+                        <input type="radio" name="pregunta1" value="1" id="1">
+                        <label for="1">Soy incapaz</label>
+                    </div>
+                
+                    <div>
+                        <input type="radio" name="pregunta1" value="2" id="2">
+                        <label for="2">Trato de no interferir</label>
+                    </div>
+                
+                    <div>
+                        <input type="radio" name="pregunta1" value="3" id="3">
+                        <label for="3">Realmente no es mi problema, para que buscar una solución </label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="pregunta1" value="4" id="4">
+                        <label for="4">Trato de comprender a mis amigos</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="pregunta1" value="5" id="5">
+                        <label for="5">Los comprendo y trato de ayudar</label>
+                    </div>
+                </div>
+    
+                <div class="botones">
+                    <button class="saber-mas" id="Cerrar">Cerrar</button>
+                    <input class="saber-mas" id="SiguienteRes" type="submit"></input>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <audio src="AUDIOS/Tutorial_1.mp3" autoplay loop>
+    </audio>
+    <script src="JS/nivel_1.js"></script>
+</body>
+</html>
